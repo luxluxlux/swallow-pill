@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider as ReactReduxProvider } from 'react-redux'
+import { StyledEngineProvider } from '@mui/material/styles';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { store } from './stores/store'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +13,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-      <App />
+    <StyledEngineProvider injectFirst>
+      <ReactReduxProvider store={store}>
+        <App />
+      </ReactReduxProvider>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
 

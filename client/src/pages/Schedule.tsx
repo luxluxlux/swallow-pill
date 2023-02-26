@@ -1,9 +1,6 @@
-import React from 'react';
-import './index.scss';
-
 function Schedule() {
   return (
-    <div></div>
+    <div>Schedule</div>
   );
 }
 
