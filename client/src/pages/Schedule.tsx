@@ -1,6 +1,8 @@
 function Schedule() {
   return (
-    <div>Schedule</div>
+    <div className="page">
+      <h1>Today activities</h1>
+    </div>
   );
 }
 

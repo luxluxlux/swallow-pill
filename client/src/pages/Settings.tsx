@@ -1,6 +1,8 @@
 function Settings() {
     return (
-        <div>Settings</div>
+        <div className="page">
+            <h1>Settings</h1>
+        </div>
     );
 }
 
