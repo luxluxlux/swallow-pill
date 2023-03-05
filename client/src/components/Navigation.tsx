@@ -15,8 +15,9 @@ function Navigation() {
     dispatch(setPage(page));
   }, []);
 
+  // TODO Change to enum
   return (
-    <BottomNavigation className="Navigation" onChange={handlePageChange}>
+    <BottomNavigation className="navigation" onChange={handlePageChange}>
       <BottomNavigationAction value="schedule" icon={<FormatListBulletedIcon />} />
       <BottomNavigationAction value="calendar" icon={<CalendarTodayIcon />} />
       <BottomNavigationAction value="profile" icon={<PersonIcon />} />

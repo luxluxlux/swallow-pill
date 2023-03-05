@@ -1,7 +1,12 @@
-// Base stuff
 @import
-  'base/normalize';
+  'abstracts/variables';
 
-// Components
+@import
+  'base/reset',
+  'base/typography';
+
 @import
   'components/navigation';
+
+@import
+  'layout/page';

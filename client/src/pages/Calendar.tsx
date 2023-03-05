@@ -1,6 +1,8 @@
 function Calendar() {
   return (
-    <div>Calendar</div>
+    <div className="page">
+      <h1>Calendar</h1>
+    </div>
   );
 }
 
