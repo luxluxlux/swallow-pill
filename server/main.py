@@ -1,15 +1,9 @@
-from flask import Flask, render_template
-from configuration import get_configuration
-from database import connect_to_database
+import os, sys
+from app import app
 
-app = Flask(__name__, static_url_path='', static_folder='../client/build', template_folder='../client/build')
-
-@app.route("/")
-def index():
-    return render_template('index.html')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
 
 if __name__ == "__main__":
-    configuration = get_configuration()
-    connect_to_database(configuration['database'])
+    # TODO Add debug mode
+    # https://habr.com/ru/post/193242/
     app.run()
-    
