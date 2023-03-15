@@ -17,10 +17,8 @@ def create_app():
     # Import database models
     import models
 
-    # Import blueprints
-    from routes import routes
-
     # Register blueprints
+    from routes import routes
     app.register_blueprint(routes)
 
     return app
