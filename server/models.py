@@ -1,4 +1,4 @@
-# Attention! Migration does not provide enums on downgrade. Do it manually.
+# Attention! Migration does not provide enums on downgrade (PostgreSQL 9.6). Do it manually.
 # https://stackoverflow.com/questions/37848815/sqlalchemy-postgresql-enum-does-not-create-type-on-db-migrate
 
 from application import db
