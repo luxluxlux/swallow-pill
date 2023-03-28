@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 from application import create_app
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
